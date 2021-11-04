@@ -1,0 +1,25 @@
+{
+  "name": "2-pokemon-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/register": "^7.16.0",
+    "autoprefixer": "^10.4.0",
+    "cssnano": "^5.0.8",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.0.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.43.4"
+  }
+}

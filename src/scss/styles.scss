@@ -1,0 +1,77 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    text-align: center;
+}
+
+.game__container{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(100, 100, 100);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.card{
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform .5s;
+
+    &&__front,
+    &__back{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+    &__front{
+    background-color: crimson;
+}
+    &__back{
+    background-image: linear-gradient(
+        45deg,
+        rgba(0,0,0,0.2) 51%,
+        transparent 40%),
+        linear-gradient(
+        red 48.5%,
+        black 50.5%,
+        white 52.5%
+    );
+    backface-visibility: hidden;
+    position: relative;
+}
+
+    &__back::before{
+    content: "?";
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 55px;
+    left: 55px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: solid 3px #000;
+    font-size: 1.8rem;
+}
+
+    &__image{
+    width: 100%;
+}
+    &-show{
+    transform: rotateY(180deg);
+    }
+}
+
