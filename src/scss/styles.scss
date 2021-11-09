@@ -5,16 +5,18 @@
 body{
     background-color: #000;
     text-align: center;
+    margin: 0;
+    font-family: sans-serif;
 }
 
 .game__container{
-    width: 70%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     background-color: rgb(100, 100, 100);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
+    gap: 10px;
 }
 
 .card{
@@ -26,7 +28,7 @@ body{
     transform-style: preserve-3d;
     transition: transform .5s;
 
-    &&__front,
+    &__front,
     &__back{
     border-radius: 5px;
     width: 100%;
@@ -74,4 +76,3 @@ body{
     transform: rotateY(180deg);
     }
 }
-
